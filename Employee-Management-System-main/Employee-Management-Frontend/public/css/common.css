@@ -1,0 +1,18 @@
+.add-user-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-user-btn i {
+  margin-right: 5px; /* Space between the plus icon and text */
+}
+
+/* Ensure the container is relatively positioned for absolute positioning */
+.container {
+  position: relative;
+}
+/* Optional: CSS for active tab styling */
