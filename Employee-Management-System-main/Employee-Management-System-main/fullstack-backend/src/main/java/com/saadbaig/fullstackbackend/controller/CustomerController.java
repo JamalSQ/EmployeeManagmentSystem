@@ -73,4 +73,12 @@ public class CustomerController {
     public Map<String, List<Message>> getCustomerMessages(@PathVariable Long customerId) {
         return messageService.getUserMessages(customerId);
     }
+
+
+    @PostMapping("/messages/{id}/read")
+    @CrossOrigin("http://localhost:3000")
+    public Message markMessageAsRead(@PathVariable Long id) {
+        return messageService.markMessageAsRead(id);
+    }
+
 }
